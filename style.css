@@ -1,0 +1,51 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contentWrapper {
+    width: 100%;
+}
+
+header {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+}
+
+.innerContent {
+    height: 100vh;
+}
+
+.innerContentAboutUs, .innerContentSlider {
+    height: 90vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+/*BOJE UKLONITI KASNIJE - tu su samo da se vidi prelaz izmedju divova */
+header, footer {
+    background: fuchsia;
+}
+.innerContentAboutUs {
+    background: red;
+}
+.innerContentTeam {
+    background: green;
+}
+
+.innerContentGallery {
+    background: orange;
+}
+.innerContentSlider {
+    background: lightgreen;
+}
+
+/* KRAJ BOJA ZA BRISANJE */
