@@ -24,15 +24,13 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 }
-a {
+a, #logo /*div koji menja logo*/ {
     text-decoration: none;
-    margin: 0 40px;
-    
+    width: calc(100% / 5);
+    text-align: center;
+    font-size: 2em;
 }
-#logo {
-    width: 200px;
-    text-align: center
-}
+
 .innerContent {
     height: 100vh;
 }
@@ -43,6 +41,10 @@ a {
 
 footer {
     height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*BOJE UKLONITI KASNIJE - tu su samo da se vidi prelaz izmedju divova */
