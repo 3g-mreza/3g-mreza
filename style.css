@@ -36,6 +36,10 @@ header, footer {
 }
 .innerContentAboutUs {
     background: red;
+    /*dodat padding*/
+    padding-left: 4%;
+    padding-right: 4%;
+    
 }
 .innerContentTeam {
     background: green;
