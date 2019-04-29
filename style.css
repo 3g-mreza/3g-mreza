@@ -76,15 +76,15 @@ header, footer {
     z-index: 0;
 }
 .innerContentSlider > figure:nth-child(1) { 
-    background-image: url('s11.png'); 
+    background-image: url('./img/s11.png'); 
 }
 .innerContentSlider > figure:nth-child(2) {
     animation-delay: 6s;
-    background-image: url('s12.jpg');
+    background-image: url('./img/s12.jpg');
 }    
 .innerContentSlider > figure:nth-child(3) {      
     animation-delay: 12s;
-    background-image: url('s13.png');             
+    background-image: url('./img/s13.png');             
 }
 @keyframes imageAnimation {  
     0% {
