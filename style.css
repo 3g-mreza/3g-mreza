@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
 }
 
 .contentWrapper {
@@ -24,18 +25,22 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 }
-a, #logo /*div koji menja logo*/ {
+nav a, #logo {
     text-decoration: none;
     width: calc(100% / 5);
     text-align: center;
     font-size: 2em;
+  
 }
-
+nav a.active {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
 .innerContent {
     height: 100vh;
+   
 }
-
-.innerContentAboutUs, .innerContentSlider {
+/*.innerContentAboutUs, */.innerContentSlider {
     height: 90vh;
 }
 
