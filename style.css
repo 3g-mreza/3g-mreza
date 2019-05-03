@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* scroll-behavior: smooth; */
 }
 
 .contentWrapper {
@@ -17,17 +18,38 @@ header {
     position: sticky;
     top: 0;
 }
-
+nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav a, #logo {
+    text-decoration: none;
+    width: calc(100% / 5);
+    text-align: center;
+    font-size: 2em;
+  
+}
+nav a.active {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
 .innerContent {
     height: 100vh;
+   
 }
-
-.innerContentAboutUs, .innerContentSlider {
+/*.innerContentAboutUs, */.innerContentSlider {
     height: 90vh;
 }
 
 footer {
     height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*BOJE UKLONITI KASNIJE - tu su samo da se vidi prelaz izmedju divova */
