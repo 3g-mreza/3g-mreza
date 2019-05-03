@@ -1,13 +1,17 @@
 :root {
     font-size: 16px;
 }
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* scroll-behavior: smooth; */
 }
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    /* scroll-behavior: smooth; */
+/* } */
 
 .contentWrapper {
     width: 100%;
@@ -37,7 +41,7 @@ nav a.active {
     border-top: 1px solid black;
 }
 .innerContent {
-    height: 100vh;
+    min-height: 100vh; /*Da bi stao ceo tekst*/
    
 }
 /*.innerContentAboutUs, */.innerContentSlider {
