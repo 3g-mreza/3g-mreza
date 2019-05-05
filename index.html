@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Front End Grupa 3</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
   <div class="contentWrapper">
     <header>
-      <nav>
-        <a href="#aboutUs" class="active">About us</a>
-        <a href="#team">Team</a>
-        <div id="logo">Logo</div> <!--Mesto za logo-->
-        <a href="#gallery">Gallery</a>
-        <a href="#slider">Slider</a>
-      </nav>
+      <div class="big">
+          <nav>
+              <a href="#aboutUs" class="active">About us</a>
+              <a href="#team">Team</a>
+              <div id="logo">Logo</div><!--Mesto za logo-->
+              <a href="#gallery">Gallery</a>
+              <a href="#slider">Slider</a>
+            </nav>
+      </div>
+      <div class="small">
+          <div id="logo">Logo</div>
+          <div><img src="img/menu.png" alt="burger" id="burger"></div>
+          <nav class="hide">
+              <a href="#aboutUs" class="active">About us</a>
+              <a href="#team">Team</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#slider">Slider</a>
+            </nav>
+      </div>
     </header>
     <div class="content">
       <!--about us-->
       <div id="aboutUs" class="innerContent innerContentAboutUs">
-      <section>
-                    <h2>O nama:</h2>
-                    <p>Nakon završene Ftontend WEB obuke u <a href="https://code.edu.rs/">Comtrade CODE</a> kroz projekat
-                         <a href="https://itobuke.rs/">“ITprekvalifikacija” Vlade
-                          Republike Srbije</a> i <a href="http://www.nsz.gov.rs/live/trazite-posao/svi-poslovi">Nacionalne Službe za
-                            zapošljavanje</a> rešili smo da nastavimo sa zajedničkim radom i usavršavanjem. Znanja i veštine koje smo stekli želimo da primenimo u praksi na konkretnim
-                        projektima.</p>
+        <section>
+          <h2>O nama:</h2>
+          <p>Nakon završene Ftontend WEB obuke u <a href="https://code.edu.rs/">Comtrade CODE</a> kroz projekat
+            <a href="https://itobuke.rs/">“ITprekvalifikacija” Vlade
+              Republike Srbije</a> i <a href="http://www.nsz.gov.rs/live/trazite-posao/svi-poslovi">Nacionalne Službe za
+              zapošljavanje</a> rešili smo da nastavimo sa zajedničkim radom i usavršavanjem. Znanja i veštine koje smo
+            stekli želimo da primenimo u praksi na konkretnim
+            projektima.</p>
 
 
-                    <p>Naš prvi velik zajednički projakat jeste organizovanje i održavanje <b>Meetup 3Gmreže</b> koji se održao
-                        17 i 18 aprila 2019
-                        godine u Aranđelovcu. Dva dana smo naporno i uporno radili na kreiranju i osmišljavanju načina na
-                        koje ćemo maksimizirati sve do sada postignuto i kako ćemo zajedničkim snagama nastaviti da kreiramo i stvaramo.</p>
+          <p>Naš prvi velik zajednički projakat jeste organizovanje i održavanje <b>Meetup 3Gmreže</b> koji se održao
+            17 i 18 aprila 2019
+            godine u Aranđelovcu. Dva dana smo naporno i uporno radili na kreiranju i osmišljavanju načina na
+            koje ćemo maksimizirati sve do sada postignuto i kako ćemo zajedničkim snagama nastaviti da kreiramo i
+            stvaramo.</p>
 
-                    <p>Ceo događaj kao i osnivanje 3G mreže su podržali: Eko Hostel “Branch”, kompanija “ Knjaz
-                        Miloš“, konjički klub “Aranđelovac”, “DeKovac”, “Uradi-Zaradi” i pojedinci.</p>
+          <p>Ceo događaj kao i osnivanje 3G mreže su podržali: Eko Hostel “Branch”, kompanija “ Knjaz
+            Miloš“, konjički klub “Aranđelovac”, “DeKovac”, “Uradi-Zaradi” i pojedinci.</p>
 
-                    <p>Tim 3G mreže sastavljen je od pojedinaca sa iskustvima, veštinama i znanjima u različitim
-                        oblastimai zbog toga vam:</p>
-                    <ul>
-                        <li><b>GARANTUJEMO</b> kvalitet i efikasnost u izradu web sadržaja</li>
-                        <li>nudimo<b>GENIJALNA</b> rešenja, ideje i savete</li>
-                        <li>pružamo <b>GRUPISAN</b> pristup vašem poslovanju - sve na jednom mestu ( web dizajin i
-                            redizajin,tehnička podrška, kreiranje
-                            sadržaja, razvoj i održavanje društvenih mreža).</li>
-                    </ul>
-                    <p><strong>TIM 3G mreže:</strong></p>
-                    <cite>
-                        “Kad te motiviše veliko delo, neki izvanredan projekat, tvoje misli kidaju sve okove, tvoj um
-                        prevazilazi granice, tvoja
-                        svest se širi u svim pravcima i pronalaziš sebe u novom velikom divnom svetu. Skrivene snage,
-                        sposobnosti i talenti
-                        dolaze do izražaja i otkrivaš da si postao mnogo bolja osoba nego što si ikada sanjao da ćeš
-                        biti.”
-                        <p>Robin Šarma</p>
-                    </cite>
+          <p>Tim 3G mreže sastavljen je od pojedinaca sa iskustvima, veštinama i znanjima u različitim
+            oblastimai zbog toga vam:</p>
+          <ul>
+            <li><b>GARANTUJEMO</b> kvalitet i efikasnost u izradu web sadržaja</li>
+            <li>nudimo<b>GENIJALNA</b> rešenja, ideje i savete</li>
+            <li>pružamo <b>GRUPISAN</b> pristup vašem poslovanju - sve na jednom mestu ( web dizajin i
+              redizajin,tehnička podrška, kreiranje
+              sadržaja, razvoj i održavanje društvenih mreža).</li>
+          </ul>
+          <p><strong>TIM 3G mreže:</strong></p>
+          <cite>
+            “Kad te motiviše veliko delo, neki izvanredan projekat, tvoje misli kidaju sve okove, tvoj um
+            prevazilazi granice, tvoja
+            svest se širi u svim pravcima i pronalaziš sebe u novom velikom divnom svetu. Skrivene snage,
+            sposobnosti i talenti
+            dolaze do izražaja i otkrivaš da si postao mnogo bolja osoba nego što si ikada sanjao da ćeš
+            biti.”
+            <p>Robin Šarma</p>
+          </cite>
 
-                    <p>O nama 3G mreži su rekli:</p>
-                    <cite>Koristim priliku da se u svoje ime zahvalim svima koji su podržali inicijativu za
-                        nastavkomučenja, rada, prijateljstva i
-                        druženja. Nadam se da ćete sve ove „prednosti“, udružiti i vrlo brzo sa onimšto imate napraviti
-                        najbolje moguće. Nosim
-                        jako pozitivne utiske, zadovoljstvo, da sam imala priliku dabudem deo tima i osetim pokretanje
-                        uzburkanih energija. Do
-                        nekog novog viđenja, smisao, vilja i želja suipak u Vama.
-                        <p>Zorica Rosić</p></cite>
+          <p>O nama 3G mreži su rekli:</p>
+          <cite>Koristim priliku da se u svoje ime zahvalim svima koji su podržali inicijativu za
+            nastavkomučenja, rada, prijateljstva i
+            druženja. Nadam se da ćete sve ove „prednosti“, udružiti i vrlo brzo sa onimšto imate napraviti
+            najbolje moguće. Nosim
+            jako pozitivne utiske, zadovoljstvo, da sam imala priliku dabudem deo tima i osetim pokretanje
+            uzburkanih energija. Do
+            nekog novog viđenja, smisao, vilja i želja suipak u Vama.
+            <p>Zorica Rosić</p></cite>
 
-                    <cite>Zadovoljstvo je bilo učestvovati u organizacij događaja i posmatrati vašu otvorenost i
-                        spremnostza dalji zajednički rad i lično napredovanje, kao i nesebično deljenje iskustava i
-                        znanja od stranepredavača. Napravili ste dobru bazu za dalji rad i saradnju, želim vam puno
-                        uspešnih projekata ubudućnosti.
-                        <p>Marija Marković</p>
-                    </cite>
-                </section>
+          <cite>Zadovoljstvo je bilo učestvovati u organizacij događaja i posmatrati vašu otvorenost i
+            spremnostza dalji zajednički rad i lično napredovanje, kao i nesebično deljenje iskustava i
+            znanja od stranepredavača. Napravili ste dobru bazu za dalji rad i saradnju, želim vam puno
+            uspešnih projekata ubudućnosti.
+            <p>Marija Marković</p>
+          </cite>
+        </section>
         <!-- sav text ne moze da stane, samo je sve nabacano bez sredjivana, cisto da se vidi kako to odprilike izgleda -->
       </div>
       <!--team-->
@@ -84,16 +100,18 @@
       <div id="gallery" class="innerContent innerContentGallery"></div>
       <!--Slider-->
       <div id="slider" class="innerContent innerContentSlider">
-                  <figure></figure>
-                  <figure></figure>
-                  <figure></figure> </div>
+        <figure></figure>
+        <figure></figure>
+        <figure></figure>
       </div>
+    </div>
     <footer>
-     <strong>3G Mreža</strong>
-     <strong>3gmreza@mail.com</strong> <!--Mesto za mail-->
-    
+      <strong>3G Mreža</strong>
+      <strong>3g-mreza@outlook.com</strong>
+
     </footer>
   </div>
   <script src="main.js"></script>
 </body>
+
 </html>

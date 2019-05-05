@@ -15,3 +15,11 @@ $(window).scroll(function()
         $(this).addClass('active').siblings().removeClass('active')	
     })
 })
+
+$('#burger').click(function(){
+    $('nav').show();
+    $(this).hide();
+    $('.small').attr('class','show');
+    $('header').css('height','30vh');
+    
+})
