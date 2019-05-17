@@ -21,6 +21,7 @@ header {
     height: 10vh;
     position: sticky;
     top: 0;
+    z-index: 1; /*dodato zbog slidera da ne ide preko headera */
 }
 .big {
     height: 100%;
@@ -46,6 +47,7 @@ nav a.active {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
+
 .innerContent {
     min-height: 100vh; /*Da bi stao ceo tekst*/
    
@@ -98,11 +100,12 @@ header, footer {
 .innerContentSlider > figure {    
     animation: imageAnimation 18s linear infinite 0s;
     backface-visibility: hidden;
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
     background-position: center center;
     color: transparent;
-    height: 80%;
-    width: 80%;      
+    height: 100%; /*procenti stavljeni jer sa vh i vw probija po sirini*/
+    width: 100%;      
     opacity: 0;
     position: absolute;    
     z-index: 0;
@@ -123,13 +126,13 @@ header, footer {
     	animation-timing-function: ease-in;
 	    opacity: 0;
     }
-    /* Opaciti u 10% i 17% postavljen na 0.8 umesto 1, da bi bio vidljiv header koji je fiksiran tj sticky */
+   
     10% {
 	    animation-timing-function: ease-out;
-	    opacity: 0.8;
+	    opacity: 1;
    	}
 	17% {
-	    opacity: 0.8;
+	    opacity: 1;
     }
     25% {
         opacity: 0;
@@ -179,4 +182,15 @@ header, footer {
    nav a.active {
        color: green;
    }
+
 }
+
+/* ZA SLIDER: */
+@media (min-width:700px) {
+    .innerContentSlider > figure {
+       background-size: cover;
+    }
+}
+
+
+
