@@ -47,12 +47,12 @@ nav a.active {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
+
 .innerContent {
     min-height: 100vh; /*Da bi stao ceo tekst*/
    
 }
-/*.innerContentAboutUs, */
-.innerContentSlider {
+/*.innerContentAboutUs, */.innerContentSlider {
     height: 90vh;
 }
 
@@ -126,7 +126,7 @@ header, footer {
     	animation-timing-function: ease-in;
 	    opacity: 0;
     }
-    /* Opaciti u 10% i 17% postavljen na 0.8 umesto 1, da bi bio vidljiv header koji je fiksiran tj sticky */
+   
     10% {
 	    animation-timing-function: ease-out;
 	    opacity: 1;
@@ -182,6 +182,7 @@ header, footer {
    nav a.active {
        color: green;
    }
+
 }
 
 /* ZA SLIDER: */
@@ -190,3 +191,6 @@ header, footer {
        background-size: cover;
     }
 }
+
+
+
