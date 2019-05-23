@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;/*Moze da se menja*/
 }
 /* body {
     margin: 0;
@@ -69,12 +70,34 @@ header, footer {
     background: fuchsia;
 }
 .innerContentAboutUs {
-    background: red;
+   /* background: red;*/
     /*dodat padding*/
-    padding-left: 4%;
-    padding-right: 4%;
-    
+    display: grid;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
 }
+.innerContentAboutUs h2, .innerContentAboutUs h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.innerContentAboutUs h3{
+    margin-top: 6%;
+}
+.innerContentAboutUs p{
+    margin-bottom: 2%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-indent: 3em;
+    text-align: justify;
+}
+.innerContentAboutUs ul{
+    margin:0 0 8% 25%;   /*cisto da se malo izdvaja od ostalog teksta*/
+}
+
+
 .innerContentTeam {
     background: green;
 }
@@ -182,7 +205,9 @@ header, footer {
    nav a.active {
        color: green;
    }
-
+   .innerContentAboutUs ul{
+    margin:0 0 8% 15%;   
+}
 }
 
 /* ZA SLIDER: */
