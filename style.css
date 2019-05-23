@@ -16,6 +16,7 @@
 
 .contentWrapper {
     width: 100%;
+    display: grid
 }
 
 header {
@@ -50,7 +51,7 @@ nav a.active {
 }
 
 .innerContent {
-    min-height: 100vh; /*Da bi stao ceo tekst*/
+    min-height: 90vh; /*Da bi stao ceo tekst*/
    
 }
 /*.innerContentAboutUs, */.innerContentSlider {
@@ -70,32 +71,49 @@ header, footer {
     background: fuchsia;
 }
 .innerContentAboutUs {
-   /* background: red;*/
     /*dodat padding*/
     display: grid;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+  grid-template-rows: 50vh 40vh;
+    
 }
-.innerContentAboutUs h2, .innerContentAboutUs h3{
-    display: flex;
+.innerContentAboutUs h2{
     justify-content: center;
-    margin-bottom: 2%;
 }
-.innerContentAboutUs h3{
-    margin-top: 6%;
+.item{
+
+}
+.item1{
+    border-bottom: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+.item2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.logoSponzora{
+    width: 17vw;
+    height: 17vw;
 }
 .innerContentAboutUs p{
-    margin-bottom: 2%;
     position: relative;
     display: inline-block;
-    width: 100%;
+    font-size: 1em;
     text-indent: 3em;
     text-align: justify;
 }
-.innerContentAboutUs ul{
-    margin:0 0 8% 25%;   /*cisto da se malo izdvaja od ostalog teksta*/
+.logoSponzora img{
+    width: 100%;
+    height: 100%;
+  object-fit:contain;
 }
+
 
 
 .innerContentTeam {
@@ -165,6 +183,21 @@ header, footer {
     }
 }
 /* ~~~~~~~~~~~ KRAJ SLIDERA ~~~~~~~~~~~*/
+@media screen and (max-width: 800px) {
+    .innerContentAboutUs{
+        font-size: 0.9em;
+        grid-template-rows: 45vh 45vh;
+     }
+    .item2{
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: 22vh 22vh;
+     }
+    .logoSponzora{
+         width: 100%;
+         height: 100%;
+    }
+}
 @media screen and (max-width: 600px) {
    .big {
        display: none;
@@ -205,9 +238,10 @@ header, footer {
    nav a.active {
        color: green;
    }
-   .innerContentAboutUs ul{
-    margin:0 0 8% 15%;   
-}
+   .innerContentAboutUs{
+       font-size: 0.8em;
+    }
+    
 }
 
 /* ZA SLIDER: */
