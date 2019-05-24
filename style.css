@@ -84,16 +84,21 @@ header, footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center
+    
+}
+.item1 h2{
+    width: 100%;
+    text-align: start;
+    padding-top: 1em;
 }
 .item2{
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 .logoSponzora{
-    width: 17vw;
-    height: 17vw;
+    width: 14vw;
+    height: 14vw;
 }
 .innerContentAboutUs p{
     position: relative;
@@ -107,8 +112,15 @@ header, footer {
     height: 100%;
     object-fit:contain;
 }
-
-
+.innerContentAboutUs a{ 
+    color: inherit; 
+   /* text-decoration: none; razmotriti ovo. linkovi se nece razlikovati od ostalog teksta.*/
+}
+a:hover{
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
 
 .innerContentTeam {
     background: green;
