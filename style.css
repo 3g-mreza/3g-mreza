@@ -114,7 +114,7 @@ header, footer {
 }
 .innerContentAboutUs a{ 
     color: inherit; 
-   text-decoration: none;  /*razmotriti ovo. linkovi se nece razlikovati od ostalog teksta.*/
+   /* text-decoration: none; razmotriti ovo. linkovi se nece razlikovati od ostalog teksta.*/
 }
 a:hover{
      color:#00A0C6; 
@@ -194,15 +194,30 @@ a:hover{
         font-size: 0.9em;
         grid-template-rows: 45vh 45vh;
      }
+    .logo1 { grid-area: prvi; }
+    .logo2 { grid-area: drugi; }
+    .logo3 { grid-area: treci; }
+    .logo4 { grid-area: cetvrti; }
+    .logo5 { grid-area: peti; }
     .item2{
         display: grid;
-        grid-template-columns: 30vw 30vw 30vw;
-        grid-template-rows: 22vh 22vh;
+        grid-template-areas:
+        'prvi prvi drugi drugi treci treci'
+        'cetvrti cetvrti cetvrti peti peti peti';
      }
     .logoSponzora{
-        width: 100%;
-        height: 100%;
+        width: auto;
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center
     }
+    .logoSponzora img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
 }
 @media screen and (max-width: 600px) {
    .big {
