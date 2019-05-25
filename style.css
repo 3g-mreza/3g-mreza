@@ -114,7 +114,7 @@ header, footer {
 }
 .innerContentAboutUs a{ 
     color: inherit; 
-   /* text-decoration: none; razmotriti ovo. linkovi se nece razlikovati od ostalog teksta.*/
+    text-decoration: none;/* razmotriti ovo. linkovi se nece razlikovati od ostalog teksta.*/
 }
 a:hover{
      color:#00A0C6; 
