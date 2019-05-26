@@ -117,7 +117,49 @@ header, footer {
 
 
 .innerContentTeam {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 2fr 8fr;
     background: green;
+}
+
+
+.cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center center;
+    height: 80%;
+    width: 100%;
+}
+.card {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 90%;
+    width: 70%;
+  }
+  
+  .card-image {
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 70%;
+    padding-bottom: 70%;
+  }
+  .h1Wrapper > div {
+    display: flex;
+    grid-area: h1;
+    align-items: center;
+} 
+
+.h1Wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 10vh);
+    grid-template-areas:
+      "." "h1";
 }
 
 .innerContentGallery {
