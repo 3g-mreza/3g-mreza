@@ -53,4 +53,4 @@ function cardCreator () {
     
 }
 
-$('.button').on('click',cardCreator());
+cardCreator();
