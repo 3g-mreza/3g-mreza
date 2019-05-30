@@ -266,6 +266,7 @@ header, footer {
     }
     #logo {
         width: 100%;
+        margin-bottom: 2%;
     }
    .hide {
        display: none;

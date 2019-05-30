@@ -13,16 +13,24 @@ $(window).scroll(function()
  $(function(){
     $('nav a').click(function(){
         $(this).addClass('active').siblings().removeClass('active')	
-    })
-})
+    });
+});
 
 $('#burger').click(function(){
     $('nav').show();
     $(this).hide();
-    $('.small').attr('class','show');
+    $('.small').addClass('show');
     $('header').css('height','30vh');
     
-})
+});
+$(function(){
+    $('nav a').click(function(){
+        $('#burger').show();
+        $('nav').hide();
+        $('header').css('height','10vh');
+        $('.small').removeClass('show');
+    });
+});
 const ourTeam = [
     {name:"Aleksandra Stanojević", github:"https://github.com/SimaoKovin", imgSource:"./img/image2.jpg"},
     {name:"Vladimir Simonović", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
