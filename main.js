@@ -21,6 +21,8 @@ $('#burger').click(function(){
     $(this).hide();
     $('.small').addClass('show');
     $('header').css('height','30vh');
+    $('nav,.logo').css('flex-basis','auto');
+    
     
 });
 $(function(){
@@ -29,6 +31,7 @@ $(function(){
         $('nav').hide();
         $('header').css('height','10vh');
         $('.small').removeClass('show');
+        $('nav,.logo').css('flex-basis','50%');
     });
 });
 const ourTeam = [

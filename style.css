@@ -1,18 +1,14 @@
 :root {
     font-size: 16px;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;/*Moze da se menja*/
+    font-family: 'Lato', sans-serif;
+    /*Moze da se menja*/
 }
-/* body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
-    /* scroll-behavior: smooth; */
-/* } */
 
 .contentWrapper {
     width: 100%;
@@ -23,14 +19,18 @@ header {
     height: 10vh;
     position: sticky;
     top: 0;
-    z-index: 1; /*dodato zbog slidera da ne ide preko headera */
+    z-index: 1;
+    /*dodato zbog slidera da ne ide preko headera */
 }
+
 .big {
     height: 100%;
 }
+
 .small {
     display: none;
 }
+
 nav {
     display: flex;
     width: 100%;
@@ -38,53 +38,67 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 }
-nav a, #logo {
+
+nav a {
     text-decoration: none;
     width: calc(100% / 5);
     text-align: center;
     font-size: 2em;
-  
+    color: white;
 }
+
+.logo img {
+    height: 60px;
+}
+
 nav a.active {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
 
 .innerContent {
-    min-height: 90vh; /*Da bi stao ceo tekst*/
-   
+    min-height: 90vh;
+    /*Da bi stao ceo tekst*/
 }
-/*.innerContentAboutUs, */.innerContentSlider {
+
+/*.innerContentAboutUs, */
+
+.innerContentSlider {
     height: 90vh;
 }
 
 footer {
     height: 10vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+}
+footer > * {
+    margin-right: 5%;
 }
 
 /*BOJE UKLONITI KASNIJE - tu su samo da se vidi prelaz izmedju divova */
+
 header, footer {
-    background: fuchsia;
+    background: #D313F0;
+    color: white;
 }
+
 .innerContentAboutUs {
     /*dodat padding*/
     display: grid;
     padding-left: 4%;
     padding-right: 4%;
-  grid-template-rows: 50vh 40vh;
-    
+    grid-template-rows: 50vh 40vh;
 }
-.innerContentAboutUs h2{
+
+.innerContentAboutUs h2 {
     justify-content: center;
 }
-.item{
 
-}
-.item1{
+.item {}
+
+.item1 {
     border-bottom: 1px solid black;
     position: relative;
     display: flex;
@@ -92,29 +106,31 @@ header, footer {
     justify-content: center;
     align-items: center
 }
-.item2{
+
+.item2 {
     display: flex;
     justify-content: space-between;
     align-items: center
 }
-.logoSponzora{
+
+.logoSponzora {
     width: 17vw;
     height: 17vw;
 }
-.innerContentAboutUs p{
+
+.innerContentAboutUs p {
     position: relative;
     display: inline-block;
     font-size: 1em;
     text-indent: 3em;
     text-align: justify;
 }
-.logoSponzora img{
+
+.logoSponzora img {
     width: 100%;
     height: 100%;
-  object-fit:contain;
+    object-fit: contain;
 }
-
-
 
 .innerContentTeam {
     display: grid;
@@ -122,7 +138,6 @@ header, footer {
     grid-template-rows: 2fr 8fr;
     background: green;
 }
-
 
 .cardWrapper {
     display: grid;
@@ -132,6 +147,7 @@ header, footer {
     height: 80%;
     width: 100%;
 }
+
 .card {
     text-align: center;
     display: flex;
@@ -141,38 +157,40 @@ header, footer {
     border: 1px solid black;
     height: 90%;
     width: 70%;
-  }
-  
-  .card-image {
+}
+
+.card-image {
     background-size: 100% 100%;
     border-radius: 50%;
     width: 70%;
     padding-bottom: 70%;
-  }
-  .h1Wrapper > div {
+}
+
+.h1Wrapper>div {
     display: flex;
     grid-area: h1;
     align-items: center;
-} 
+}
 
 .h1Wrapper {
     display: grid;
     grid-template-rows: repeat(2, 10vh);
-    grid-template-areas:
-      "." "h1";
+    grid-template-areas: "." "h1";
 }
 
 .innerContentGallery {
     background: orange;
 }
+
 /* ovaj deo je prebacen u slider: */
+
 /* .innerContentSlider {
     background: lightgreen;
 } */
 
 /* KRAJ BOJA ZA BRISANJE */
 
-/* ~~~~~~~~~~ SLIDER ~~~~~~~~~~~~~~~~ */  
+/* ~~~~~~~~~~ SLIDER ~~~~~~~~~~~~~~~~ */
 
 .innerContentSlider {
     background: lightgreen;
@@ -180,119 +198,137 @@ header, footer {
     justify-content: center;
     align-items: center;
 }
-.innerContentSlider > figure {    
+
+.innerContentSlider>figure {
     animation: imageAnimation 18s linear infinite 0s;
     backface-visibility: hidden;
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-position: center center;
     color: transparent;
-    height: 100%; /*procenti stavljeni jer sa vh i vw probija po sirini*/
-    width: 100%;      
+    height: 100%;
+    /*procenti stavljeni jer sa vh i vw probija po sirini*/
+    width: 100%;
     opacity: 0;
-    position: absolute;    
+    position: absolute;
     z-index: 0;
 }
-.innerContentSlider > figure:nth-child(1) { 
-    background-image: url('./img/s11.png'); 
+
+.innerContentSlider>figure:nth-child(1) {
+    background-image: url('./img/s11.png');
 }
-.innerContentSlider > figure:nth-child(2) {
+
+.innerContentSlider>figure:nth-child(2) {
     animation-delay: 6s;
     background-image: url('./img/s12.jpg');
-}    
-.innerContentSlider > figure:nth-child(3) {      
-    animation-delay: 12s;
-    background-image: url('./img/s13.png');             
 }
-@keyframes imageAnimation {  
+
+.innerContentSlider>figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('./img/s13.png');
+}
+
+@keyframes imageAnimation {
     0% {
-    	animation-timing-function: ease-in;
-	    opacity: 0;
+        animation-timing-function: ease-in;
+        opacity: 0;
     }
-   
     10% {
-	    animation-timing-function: ease-out;
-	    opacity: 1;
-   	}
-	17% {
-	    opacity: 1;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
     }
     25% {
         opacity: 0;
     }
-	100% {
-	    opacity: 0;
+    100% {
+        opacity: 0;
     }
 }
+
 /* ~~~~~~~~~~~ KRAJ SLIDERA ~~~~~~~~~~~*/
+
 @media screen and (max-width: 800px) {
-    .innerContentAboutUs{
+    .innerContentAboutUs {
         font-size: 0.9em;
         grid-template-rows: 45vh 45vh;
-     }
-    .item2{
+    }
+    .item2 {
         display: grid;
         grid-template-columns: 30vw 30vw 30vw;
         grid-template-rows: 22vh 22vh;
-     }
-    .logoSponzora{
-         width: 100%;
-         height: 100%;
+    }
+    .logoSponzora {
+        width: 100%;
+        height: 100%;
     }
 }
+
 @media screen and (max-width: 600px) {
-   .big {
-       display: none;
-   }
-   .small {
-       width: 100%;
-       height: 100%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-   }
-   .small > * {
-       flex-basis: 50%;
-   }
-   nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+    :root {
+        font-size: 14px;
+    }
+    .big {
+        display: none;
+    }
+    .small {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .small>* {
+        flex-basis: 50%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     nav a {
         width: 100%;
-        border: 2px solid;
     }
-    #logo {
-        width: 100%;
-        margin-bottom: 2%;
+    .logo img {
+        margin-top: 2%;
     }
-   .hide {
-       display: none;
-   }
-   .show {
-       flex-direction: column;  
-   }
-   
-   #burger {
-       cursor: grab;
-   }
-   nav a.active {
-       color: green;
-   }
-   .innerContentAboutUs{
+    .hide {
+        display: none;
+    }
+    .show {
+        flex-direction: column;
+    }
+    #burger {
+        cursor: grab;
+    }
+    nav a.active {
+        border: none;
+        position: relative;
+    }
+    nav a:hover {
+        color: #27CC4D;
+    }
+    nav a.active::before {
+        content: '->';
+        position: absolute;
+        left: 20%;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .innerContentAboutUs{
        font-size: 0.8em;
-    }
-    
+    } */
 }
 
 /* ZA SLIDER: */
+
 @media (min-width:700px) {
-    .innerContentSlider > figure {
-       background-size: cover;
+    .innerContentSlider>figure {
+        background-size: cover;
     }
 }
-
-
-
