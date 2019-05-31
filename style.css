@@ -55,7 +55,9 @@ nav a.active {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
-
+nav a:hover {
+    color: #27CC4D;
+}
 .innerContent {
     min-height: 90vh;
     /*Da bi stao ceo tekst*/
@@ -308,9 +310,7 @@ header, footer {
         border: none;
         position: relative;
     }
-    nav a:hover {
-        color: #27CC4D;
-    }
+   
     nav a.active::before {
         content: '->';
         position: absolute;

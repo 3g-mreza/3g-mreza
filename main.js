@@ -17,7 +17,7 @@ $(window).scroll(function()
 });
 
 $('#burger').click(function(){
-    $('nav').show();
+    $('.small nav').show();
     $(this).hide();
     $('.small').addClass('show');
     $('header').css('height','30vh');
@@ -26,7 +26,7 @@ $('#burger').click(function(){
     
 });
 $(function(){
-    $('nav a').click(function(){
+    $('.small nav a').click(function(){
         $('#burger').show();
         $('nav').hide();
         $('header').css('height','10vh');
