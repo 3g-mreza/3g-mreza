@@ -32,18 +32,18 @@ $(function(){
     });
 });
 const ourTeam = [
-    {name:"Aleksandra Stanojević", github:"https://github.com/SimaoKovin", imgSource:"./img/image2.jpg"},
-    {name:"Vladimir Simonović", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Danijela Reljić", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg" },
-    {name:"Ivan Stojković", github:"https://github.com/SimaoKovin", imgSource:"././img/image2.jpg"},
-    {name:"Irena Šestak", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Marija Šobić", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Martina Trajković", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Nataša Vuković", github:"https://github.com/SimaoKovin", imgSource:"././img/image2.jpg"},
-    {name:"Nenad Vukašinović", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Rada Popović", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Slavko Vranešević", github:"https://github.com/SimaoKovin", imgSource:"./img/image.jpg"},
-    {name:"Tadija Selaković", github:"https://github.com/SimaoKovin", imgSource:"./img/image2.jpg"}
+    {name:"Aleksandra Stanojević", github:"https://github.com/aleksandrastanojevic", imgSource:"./gif/saska.gif"},
+    {name:"Vladimir Simonović", github:"https://github.com/SimaoKovin", imgSource:"./gif/vladimir.gif"},
+    {name:"Danijela Reljić", github:"https://github.com/danijelareljic", imgSource:"./gif/danijela.gif" },
+    {name:"Ivan Stojković", github:"https://github.com/iks94", imgSource:"./gif/image2.gif"},
+    {name:"Irena Šestak", github:"https://github.com/9999starlight", imgSource:"./gif/irena.gif"},
+    {name:"Marija Šobić", github:"https://github.com/marijasobic", imgSource:"./gif/marija.gif"},
+    {name:"Martina Trajković", github:"https://github.com/MartinaTrajkovic", imgSource:"./gif/image.gif"},
+    {name:"Nataša Vuković", github:"https://github.com/natasa1707", imgSource:"././gif/natasa.gif"},
+    {name:"Nenad Vukašinović", github:"https://github.com/nenadvuk", imgSource:"./gif/nenad.gif"},
+    {name:"Rada Popović", github:"https://github.com/radapopovic", imgSource:"./gif/rada.gif"},
+    {name:"Slavko Vranešević", github:"https://github.com/SlavkoVran", imgSource:"./gif/slavko.gif"},
+    {name:"Tadija Selaković", github:"https://github.com/tadija84", imgSource:"./gif/tadija.gif"}
     
 ]
 
@@ -61,4 +61,4 @@ function cardCreator () {
     
 }
 
-cardCreator();
+$('.button').on('click',cardCreator());
