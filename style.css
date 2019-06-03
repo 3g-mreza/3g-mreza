@@ -98,8 +98,6 @@ header, footer {
     justify-content: center;
 }
 
-.item {}
-
 .item1 {
     border-bottom: 1px solid black;
     position: relative;
@@ -142,23 +140,23 @@ header, footer {
 }
 
 .cardWrapper {
+    padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    place-items: center center;
-    height: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem;
     width: 100%;
 }
 
 .card {
+    padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     border: 1px solid black;
-    height: 90%;
-    width: 70%;
+    width: 90%;
+    height: 100%;
 }
 
 .card-image {
@@ -168,16 +166,9 @@ header, footer {
     padding-bottom: 70%;
 }
 
-.h1Wrapper>div {
-    display: flex;
-    grid-area: h1;
-    align-items: center;
-}
-
 .h1Wrapper {
-    display: grid;
-    grid-template-rows: repeat(2, 10vh);
-    grid-template-areas: "." "h1";
+    text-align: center;
+    padding: 1.5rem;
 }
 
 .innerContentGallery {
